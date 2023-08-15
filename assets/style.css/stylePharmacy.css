@@ -1,0 +1,66 @@
+
+
+.bi-cart3{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* pharmacy & toys -- cards */
+main{
+    background-color:#ebebeb;
+    min-height: 84vh;
+}
+
+
+.card{
+    width: 18rem;
+    border-radius: 0px;
+}
+
+.card img{
+    height: 14.5rem !important;
+    object-fit: cover;
+}
+
+.bg-crema{
+    background-color: var(--color-2);
+    color: #fff;
+    border: none !important;
+}
+
+img.veterinaria-logo{
+    height: 3rem!important;
+}
+
+.card-footer{
+    border: none !important;
+    background-color: #fff !important;
+}
+
+/* carrito */
+.offcanvas{
+    width: 35rem !important;
+}
+
+.imagen-carrito{
+    height: 4.5rem;
+    object-fit: cover;
+}
+.bi-trash{
+    color: green;
+}
+
+.button-minus, .button-plus, .form-input{
+    border: 1px solid #ecf0ef !important;
+    width: 1.8rem !important;
+}
+.form-input{
+    text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+

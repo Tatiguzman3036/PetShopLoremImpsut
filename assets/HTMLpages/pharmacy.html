@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <link rel="shortcut icon" href="./../images/logoLorem-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+    <link rel="stylesheet" href="./../style.css/stylePharmacy.css">
+    <link rel="stylesheet" href="../style.css/style.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+        <!-- Default theme -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+        <!-- Semantic UI theme -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
+        <!-- Bootstrap theme -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
+    
+        <!-- 
+        RTL version
+    -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.rtl.min.css" />
+        <!-- Default theme -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.rtl.min.css" />
+        <!-- Semantic UI theme -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.rtl.min.css" />
+        <!-- Bootstrap theme -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.rtl.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Literata">
+    <title>Lorem Ipsum | Pharmacy</title>
+
+</head>
+
+<body id="app">
+
+    <header>
+
+
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid d-flex justify-content-between  px-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href="">
+                    <img id="favicon" src="../images/logoLorem-removebg-preview.png" alt="favicon">
+                </a>
+
+
+                <div class="collapse navbar-collapse flex-grow-0 text-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Pharmacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./toys.html">Toys</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <span class="position-relative gap-5 ms-md-5">
+                        <i class="bi bi-cart3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                            aria-controls="offcanvasRight"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                            {{arrayCarrito.length}}
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </span>
+                </div>
+
+            </div>
+        </nav>
+
+
+    </header>
+
+    <div class="container-fluid">
+        <div class="row align-items-center justify-content-center border my-3">
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+                <ul class="list-group list-group-horizontal-md border-0">
+                    <li class="list-group-item border-0"><img src="./../images/icons-cards.svg" alt="pagos img"></li>
+                    <li class="list-group-item border-0 fw-bolder text-muted small text-center">Payment methods</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+                <ul class="list-group list-group-horizontal-md border-0 align-items-center">
+                    <li class="list-group-item border-0"><i class="bi bi-shop fs-2"></i></li>
+                    <li class="list-group-item border-0 fw-bolder text-muted small text-center">Free pick up in any of our branches</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-center">
+                <ul class="list-group list-group-horizontal-md border-0 align-items-center">
+                    <li class="list-group-item border-0"><i class="bi bi-truck fs-2"></i></li>
+                    <li class="list-group-item border-0 fw-bolder text-muted small text-center">Same-day shipping on your purchase</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4"></div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center py-2">
+            <div class="d-flex justify-content-center">
+                <form class="w-50 d-flex" role="search">
+                    <!-- {{filtro}} -->
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search"
+                        v-model="vModelSearch">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="container py-5">
+            <div class="row justify-content-lg-center">
+                <div class="col-12 d-flex flex-wrap justify-content-center gap-4">
+                    <div class="card p-0 border-1 position-relative" v-for="articulo of filtro">
+                        <span v-if="!articulo.disponibles"
+                            class="m-1 badge rounded-pill text-bg-danger position-absolute top-0 start-0">No stock available!</span>
+                        <a :href="'./details.html?_id='+articulo._id"><img :src="articulo.imagen" class="card-img-top"
+                                :alt="articulo.nombre"></a>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <h5 class="card-title ">${{articulo.precio.toLocaleString()}}</h5>
+                                <span class="disponibles-warning"
+                                    v-if="articulo.disponibles < 5 && articulo.disponibles!=0"><i
+                                        class="bi bi-exclamation-triangle-fill text-warning"></i> <span
+                                        class="small text-muted">{{articulo.disponibles}} units available</span></span>
+                            </div>
+                            <p class="card-text text-secondary">{{articulo.producto}}</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-around">
+                            <button :class="articulo.disponibles != 0 ? 'btn btn-success bg-crema' : 'btn btn-success bg-crema disabled' "
+                                @click="añadirCarrito(articulo._id)"><i>+Add to shop cart</i></button>
+                        </div>
+                    </div>
+                    <div v-if="!filtro.length"><h1 class="text-center mt-5 fw-bold opacity-25">Oops nothing to see here...</h1></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- offcanvas carrito -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Shop Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="d-flex justify-content-between alert alert-warning mt-3 mb-0 mx-3">
+            <span>Purchase total:</span> <span>${{funcionPrecioTotal.toLocaleString()}}</span>
+          </div>
+        <div class="offcanvas-body mx-2">
+            <div class="row align-content-center py-2 border-top" v-if="arrayCarrito.length > 0" v-for="articuloCarrito of arrayCarrito">
+                <div class="col-3 col-md-2">
+                    <img class="img-fluid" :src="articuloCarrito.articulo.imagen" :alt="articuloCarrito.articulo.producto" >
+                </div>
+                <div class="col-4 col-md-6 col-lg-5">
+                    <p class="fw-bold small">{{articuloCarrito.articulo.producto}}</p>
+                    <a class="small text-decoration-none text-dark" role="button" @click="borrarCarrito(articuloCarrito.articulo._id)"><span class="me-1"><i class="bi bi-trash"></i></span><span class="text-muted">Remove</span></a>
+                </div>
+                <div class="col-3">
+                    <div class="input-group input-spinner">
+                        <form >
+                            <input type="button" value="-" @click="decrementarCantidadCarrito(articuloCarrito.articulo._id)" class="button-minus  btn  btn-sm">
+                            <input type="number" step="1" min="1" :max="articuloCarrito.articulo.disponibles" v-model="articuloCarrito.cantidad" name="quantity" class="input-form" readonly>
+                            <input type="button" value="+" @click="incrementarCantidadCarrito(articuloCarrito.articulo._id)" class="button-plus  btn  btn-sm">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-2 text-end"><span class="fw-bold">${{(articuloCarrito.articulo.precio * articuloCarrito.cantidad).toLocaleString()}}</span></div>
+            </div>
+            <div v-if="!arrayCarrito.length">
+                <h3 class="text-center fw-bold opacity-25 my-5">There is no elements in your shop carts, add some!</h3>
+            </div>
+        </div>
+        <div class="d-flex justify-content-around">
+            <button class="btn btn-danger my-3" @click="vaciarStorage">Clear shopping cart</button>
+            <button class="btn btn-success my-3"><i class="bi bi-cart-check-fill"></i><span class="ps-2"> Finish</span></button>
+        </div>
+    </div>
+
+
+
+    <svg class="w-100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#F08251" fill-opacity="1"
+            d="M0,288L48,266.7C96,245,192,203,288,186.7C384,171,480,181,576,197.3C672,213,768,235,864,240C960,245,1056,235,1152,234.7C1248,235,1344,245,1392,250.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+        </path>
+    </svg>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <p>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-messenger"></i>
+                <i class="bi bi-whatsapp"></i>
+            </p>
+        </div>
+        <div class="footer-column">
+            <h5>&copy;Copyrigth: Mauricio Echaniz / Federico Paez / Tatiana Guzman / Jenifer Roelstraete</h5>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="./../JsPages/pharmacy.js"></script>
+
+
+</body>
+
+</html>

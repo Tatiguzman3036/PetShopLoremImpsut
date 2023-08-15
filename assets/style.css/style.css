@@ -1,0 +1,159 @@
+:root{
+    --tamaño-icon:4rem;
+    --color-1: #F08251;
+    --color-2: #FFA884;
+}
+
+
+.bg-fff{
+    background-color: #fff;
+}
+
+.color-bg-titulo{
+    background-color: var(--color-1);
+    color: #fff;
+    font-weight: 600;
+}
+
+.bg-crema{
+    background-color: var(--color-1)!important;
+}
+
+.color-crema{
+    color: var(--color-1);
+}
+
+.shadow{
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2),
+    0px -2px 4px rgba(0, 0, 0, 0.2),
+    2px 0px 4px rgba(0, 0, 0, 0.2),
+    -2px 0px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+body,footer {
+    font-size: 20px;
+  }
+  div:nth-child(1) {
+    font-family: 'Crimson Pro', serif;
+  }
+  div:nth-child(2) {
+    font-family: 'Literata’, serif;
+  }
+
+#favicon{
+    width: var(--tamaño-icon);
+    height: var(--tamaño-icon);
+}
+
+.logo-nav{
+    width: 6rem;
+}
+
+header{
+    position: fixed!important;
+    top: 0;
+    width: 100vw;
+    z-index: 99;
+}
+
+.navbar{
+    background-color:var(--color-1) !important;
+}
+
+
+body{
+    margin-top: 5rem;
+}
+
+.navbar-nav  .nav-item a.nav-link {
+    color: #fff!important;
+    font-weight: 800;
+}
+
+.nav-link{
+    margin-right: 15px;
+}
+
+.nav-link[href="#"]{
+    background-color: var(--color-2);
+    color: #fff !important;
+    box-shadow: 6px 6px 2px 1px  #ED6059;
+}
+
+
+.bi-cart3{
+    color: #fff!important;
+}
+
+p i{
+    font-size: 2rem;
+}
+
+.imagen-inicio{
+    height: 30rem;
+    object-fit: cover;
+}
+
+video{
+    height: 23rem;
+}
+
+footer{
+    background-color:var(--color-1) !important;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer p, .footer h5 {
+    margin: 0;
+}
+
+.footer p i {
+    margin-right: 4px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer h5 {
+    font-size: 14px;
+    color: #fff;
+}
+
+.cardDetails{
+    background: #ABE5C9;
+}
+
+.imgDetails{
+    border: 1px solid black; 
+}
+
+.object-fit-cover{
+    object-fit: cover;
+}
+
+.buy{
+    cursor:pointer
+}
+
+h1, h2, h2{
+    text-align: center;
+}
+
+
+.card-border{
+    border: solid 1px var(--color-1);
+}

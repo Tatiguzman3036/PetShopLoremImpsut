@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+  }
+
+  main{
+    flex-grow: 1!important;
+    min-height: 84vh;
+  }
+  .container-fluid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+ 
+  header {
+    background-color: #F08251;
+  }
+
+  #favicon {
+    width: 40px;
+  }
+
+  .navbar-nav .nav-link {
+    color: #FFF;
+  }
+
+
+  #app {
+    padding: 40px 0;
+    text-align: center;
+  }
+  h2 {
+    color: #F08251;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .card {
+    max-width: 720px;
+    height: 380px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #F08251 ;
+  }
+
+  .card:hover{
+    box-shadow:0px 8px 16px rgba(0, 0, 0, 0.594);
+  }
+  .card-title {
+    color: #FFF;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .card-text, .text-body-secondary {
+    color: #FFF !important;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .text-body-secondary {
+    color: #777;
+    font-size: 12px;
+  }
+
+  footer{
+    background-color: #F08251;
+  }
+
+  img{
+    width: 14rem;
+    height: 6rem;
+    margin-left: 1rem;
+    box-shadow:0px 8px 16px rgba(0, 0, 0, 0.594);
+  }
+
+  @media screen and (max-width:768px) {
+    img{
+        width: 14rem;
+        height: 6rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+      }
+
+      .card {
+        height: 480px;
+        background-color: #F08251 ;
+      }
+  }

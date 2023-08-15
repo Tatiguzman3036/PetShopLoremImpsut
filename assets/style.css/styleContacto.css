@@ -1,0 +1,38 @@
+textarea{
+    resize: none;
+}
+body{
+    margin-top:0rem;
+}
+
+.bg-crema{
+    color: #fff;
+}
+.alertify .ajs-buttons {
+    text-align: right !important;
+}
+.contact-img{
+    height: 30rem;
+    object-fit: cover;
+
+}
+.image{
+    height: 5.5rem;
+    margin: 0 auto;
+}
+
+iframe{
+    border-radius: 15px;
+    max-width:600px;
+    min-height: 450px;
+}
+
+.borde{
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.bg-crema{
+    background-color: var(--color-2);
+    color: #fff;
+    border: none !important;
+}

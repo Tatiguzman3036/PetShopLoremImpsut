@@ -1,0 +1,84 @@
+:root{
+    --tamaño-icon:4rem
+}
+
+#favicon{
+    width: var(--tamaño-icon);
+    height: var(--tamaño-icon);
+}
+
+p i{
+    font-size: 2rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer p, .footer h5 {
+    margin: 0;
+}
+
+.footer p i {
+    margin-right: 4px;
+    color: #000;
+    font-size: 18px;
+}
+
+.footer h5 {
+    font-size: 14px;
+    color: #777;
+}
+
+.carousel-img {
+    height: 60vh !important;
+
+}
+.caja-carousel {
+    width: 70vw !important;
+}
+.carousel-contenedor  {
+    border-radius: 10px;
+    background-color: rgba(46, 55, 63, 0.479);
+    font-size: 4rem !important;
+
+} 
+.imagen-farmacia {
+    width: 100% !important;
+    height: 15rem !important;
+    padding-top: 6rem !;
+}
+.imagen-carousel-2-home {
+    width: 8rem !important;
+    margin: 1rem !important;
+}
+.cardfarjug {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.ms-20 {
+    margin-left: 20rem !important;
+}
+.ms-5{
+    margin-left: 5rem !important;
+}
+.m-3{
+    margin: 3rem !important;
+}
+.card-hover:hover{
+    -webkit-transform:scale(1.1);transform:scale(1.1) !important;
+    overflow:hidden !important;
+    transition: 1.5s !important;
+}
